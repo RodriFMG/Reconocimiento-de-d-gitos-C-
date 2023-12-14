@@ -16,7 +16,15 @@ set(OpenCV_FOUND TRUE)
 
 
 add_executable(Reconocimiento-de-d-gitos-C- main.cpp
-        NeuronalNetwork.cpp)
+        Derivadas_Funciones_Activacion.cpp
+        Propagacion.cpp
+        RedNeuronal.cpp
+        Normalizacion_Capa_Entrada.cpp
+        Capa_Entrada.cpp
+        Descenso_Gradiante.cpp
+        Funciones_activacion.cpp
+        Resultados.cpp
+)
 
 set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
 

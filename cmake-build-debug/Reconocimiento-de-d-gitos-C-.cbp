@@ -90,10 +90,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/NeuronalNetwork.cpp">
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Capa_Entrada.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/NeuronalNetwork.h">
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Derivadas_Funciones_Activacion.cpp">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Descenso_Gradiante.cpp">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Funciones_activacion.cpp">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Normalizacion_Capa_Entrada.cpp">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Propagacion.cpp">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/RedNeuronal.cpp">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Resultados.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
 		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/main.cpp">

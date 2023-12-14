@@ -118,29 +118,197 @@ Reconocimiento-de-d-gitos-C-\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build
 .PHONY : Reconocimiento-de-d-gitos-C-\fast
 
-NeuronalNetwork.obj: NeuronalNetwork.cpp.obj
-.PHONY : NeuronalNetwork.obj
+Capa_Entrada.obj: Capa_Entrada.cpp.obj
+.PHONY : Capa_Entrada.obj
 
 # target to build an object file
-NeuronalNetwork.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\NeuronalNetwork.cpp.obj
-.PHONY : NeuronalNetwork.cpp.obj
+Capa_Entrada.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Capa_Entrada.cpp.obj
+.PHONY : Capa_Entrada.cpp.obj
 
-NeuronalNetwork.i: NeuronalNetwork.cpp.i
-.PHONY : NeuronalNetwork.i
+Capa_Entrada.i: Capa_Entrada.cpp.i
+.PHONY : Capa_Entrada.i
 
 # target to preprocess a source file
-NeuronalNetwork.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\NeuronalNetwork.cpp.i
-.PHONY : NeuronalNetwork.cpp.i
+Capa_Entrada.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Capa_Entrada.cpp.i
+.PHONY : Capa_Entrada.cpp.i
 
-NeuronalNetwork.s: NeuronalNetwork.cpp.s
-.PHONY : NeuronalNetwork.s
+Capa_Entrada.s: Capa_Entrada.cpp.s
+.PHONY : Capa_Entrada.s
 
 # target to generate assembly for a file
-NeuronalNetwork.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\NeuronalNetwork.cpp.s
-.PHONY : NeuronalNetwork.cpp.s
+Capa_Entrada.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Capa_Entrada.cpp.s
+.PHONY : Capa_Entrada.cpp.s
+
+Derivadas_Funciones_Activacion.obj: Derivadas_Funciones_Activacion.cpp.obj
+.PHONY : Derivadas_Funciones_Activacion.obj
+
+# target to build an object file
+Derivadas_Funciones_Activacion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Derivadas_Funciones_Activacion.cpp.obj
+.PHONY : Derivadas_Funciones_Activacion.cpp.obj
+
+Derivadas_Funciones_Activacion.i: Derivadas_Funciones_Activacion.cpp.i
+.PHONY : Derivadas_Funciones_Activacion.i
+
+# target to preprocess a source file
+Derivadas_Funciones_Activacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Derivadas_Funciones_Activacion.cpp.i
+.PHONY : Derivadas_Funciones_Activacion.cpp.i
+
+Derivadas_Funciones_Activacion.s: Derivadas_Funciones_Activacion.cpp.s
+.PHONY : Derivadas_Funciones_Activacion.s
+
+# target to generate assembly for a file
+Derivadas_Funciones_Activacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Derivadas_Funciones_Activacion.cpp.s
+.PHONY : Derivadas_Funciones_Activacion.cpp.s
+
+Descenso_Gradiante.obj: Descenso_Gradiante.cpp.obj
+.PHONY : Descenso_Gradiante.obj
+
+# target to build an object file
+Descenso_Gradiante.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Descenso_Gradiante.cpp.obj
+.PHONY : Descenso_Gradiante.cpp.obj
+
+Descenso_Gradiante.i: Descenso_Gradiante.cpp.i
+.PHONY : Descenso_Gradiante.i
+
+# target to preprocess a source file
+Descenso_Gradiante.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Descenso_Gradiante.cpp.i
+.PHONY : Descenso_Gradiante.cpp.i
+
+Descenso_Gradiante.s: Descenso_Gradiante.cpp.s
+.PHONY : Descenso_Gradiante.s
+
+# target to generate assembly for a file
+Descenso_Gradiante.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Descenso_Gradiante.cpp.s
+.PHONY : Descenso_Gradiante.cpp.s
+
+Funciones_activacion.obj: Funciones_activacion.cpp.obj
+.PHONY : Funciones_activacion.obj
+
+# target to build an object file
+Funciones_activacion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Funciones_activacion.cpp.obj
+.PHONY : Funciones_activacion.cpp.obj
+
+Funciones_activacion.i: Funciones_activacion.cpp.i
+.PHONY : Funciones_activacion.i
+
+# target to preprocess a source file
+Funciones_activacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Funciones_activacion.cpp.i
+.PHONY : Funciones_activacion.cpp.i
+
+Funciones_activacion.s: Funciones_activacion.cpp.s
+.PHONY : Funciones_activacion.s
+
+# target to generate assembly for a file
+Funciones_activacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Funciones_activacion.cpp.s
+.PHONY : Funciones_activacion.cpp.s
+
+Normalizacion_Capa_Entrada.obj: Normalizacion_Capa_Entrada.cpp.obj
+.PHONY : Normalizacion_Capa_Entrada.obj
+
+# target to build an object file
+Normalizacion_Capa_Entrada.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Normalizacion_Capa_Entrada.cpp.obj
+.PHONY : Normalizacion_Capa_Entrada.cpp.obj
+
+Normalizacion_Capa_Entrada.i: Normalizacion_Capa_Entrada.cpp.i
+.PHONY : Normalizacion_Capa_Entrada.i
+
+# target to preprocess a source file
+Normalizacion_Capa_Entrada.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Normalizacion_Capa_Entrada.cpp.i
+.PHONY : Normalizacion_Capa_Entrada.cpp.i
+
+Normalizacion_Capa_Entrada.s: Normalizacion_Capa_Entrada.cpp.s
+.PHONY : Normalizacion_Capa_Entrada.s
+
+# target to generate assembly for a file
+Normalizacion_Capa_Entrada.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Normalizacion_Capa_Entrada.cpp.s
+.PHONY : Normalizacion_Capa_Entrada.cpp.s
+
+Propagacion.obj: Propagacion.cpp.obj
+.PHONY : Propagacion.obj
+
+# target to build an object file
+Propagacion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Propagacion.cpp.obj
+.PHONY : Propagacion.cpp.obj
+
+Propagacion.i: Propagacion.cpp.i
+.PHONY : Propagacion.i
+
+# target to preprocess a source file
+Propagacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Propagacion.cpp.i
+.PHONY : Propagacion.cpp.i
+
+Propagacion.s: Propagacion.cpp.s
+.PHONY : Propagacion.s
+
+# target to generate assembly for a file
+Propagacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Propagacion.cpp.s
+.PHONY : Propagacion.cpp.s
+
+RedNeuronal.obj: RedNeuronal.cpp.obj
+.PHONY : RedNeuronal.obj
+
+# target to build an object file
+RedNeuronal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\RedNeuronal.cpp.obj
+.PHONY : RedNeuronal.cpp.obj
+
+RedNeuronal.i: RedNeuronal.cpp.i
+.PHONY : RedNeuronal.i
+
+# target to preprocess a source file
+RedNeuronal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\RedNeuronal.cpp.i
+.PHONY : RedNeuronal.cpp.i
+
+RedNeuronal.s: RedNeuronal.cpp.s
+.PHONY : RedNeuronal.s
+
+# target to generate assembly for a file
+RedNeuronal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\RedNeuronal.cpp.s
+.PHONY : RedNeuronal.cpp.s
+
+Resultados.obj: Resultados.cpp.obj
+.PHONY : Resultados.obj
+
+# target to build an object file
+Resultados.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Resultados.cpp.obj
+.PHONY : Resultados.cpp.obj
+
+Resultados.i: Resultados.cpp.i
+.PHONY : Resultados.i
+
+# target to preprocess a source file
+Resultados.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Resultados.cpp.i
+.PHONY : Resultados.cpp.i
+
+Resultados.s: Resultados.cpp.s
+.PHONY : Resultados.s
+
+# target to generate assembly for a file
+Resultados.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Resultados.cpp.s
+.PHONY : Resultados.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -175,9 +343,30 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Reconocimiento-de-d-gitos-C-
-	@echo ... NeuronalNetwork.obj
-	@echo ... NeuronalNetwork.i
-	@echo ... NeuronalNetwork.s
+	@echo ... Capa_Entrada.obj
+	@echo ... Capa_Entrada.i
+	@echo ... Capa_Entrada.s
+	@echo ... Derivadas_Funciones_Activacion.obj
+	@echo ... Derivadas_Funciones_Activacion.i
+	@echo ... Derivadas_Funciones_Activacion.s
+	@echo ... Descenso_Gradiante.obj
+	@echo ... Descenso_Gradiante.i
+	@echo ... Descenso_Gradiante.s
+	@echo ... Funciones_activacion.obj
+	@echo ... Funciones_activacion.i
+	@echo ... Funciones_activacion.s
+	@echo ... Normalizacion_Capa_Entrada.obj
+	@echo ... Normalizacion_Capa_Entrada.i
+	@echo ... Normalizacion_Capa_Entrada.s
+	@echo ... Propagacion.obj
+	@echo ... Propagacion.i
+	@echo ... Propagacion.s
+	@echo ... RedNeuronal.obj
+	@echo ... RedNeuronal.i
+	@echo ... RedNeuronal.s
+	@echo ... Resultados.obj
+	@echo ... Resultados.i
+	@echo ... Resultados.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
