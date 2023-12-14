@@ -26,3 +26,7 @@ Configurar OpenCV puede ser más complejo y puede implicar ajustes en las variab
 3. Además, configura Clion con el compilador de Visual Studio Code según las instrucciones en [este video tutorial](https://www.youtube.com/watch?v=3ZinHm2HaQ8&t=783s).
 
 Ten en cuenta que el video utiliza una versión anterior de OpenCV, pero podrías necesitar ajustar las variables de entorno para trabajar con "vc16". Después de modificar las variables de entorno, reinicia tu dispositivo.
+
+
+Referencia:
+- Canal de YT de [Ethernel Tech](https://www.youtube.com/@ethernel) (video y repostiorio)
