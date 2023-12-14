@@ -1,3 +1,6 @@
+En este repositorio se encuentra el enunciado 1 del proyecto de programación 3.
+Se implemento una red neuronal con la capacidad de reconocer dígitos apartir de una infraestructura de feed forward.
+
 # Configuración del Proyecto
 
 ## CMakeLists
