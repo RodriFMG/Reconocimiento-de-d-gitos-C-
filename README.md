@@ -28,5 +28,5 @@ Configurar OpenCV puede ser más complejo y puede implicar ajustes en las variab
 Ten en cuenta que el video utiliza una versión anterior de OpenCV, pero podrías necesitar ajustar las variables de entorno para trabajar con "vc16". Después de modificar las variables de entorno, reinicia tu dispositivo.
 
 
-Referencia:
+## Referencia:
 - Canal de YT de [Ethernel Tech](https://www.youtube.com/@ethernel) (video y repostiorio)
