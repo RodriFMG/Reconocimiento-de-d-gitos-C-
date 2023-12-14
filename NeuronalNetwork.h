@@ -5,7 +5,6 @@
 #ifndef PROYECTOPROGRAIII_NEURONALNETWORK_H
 #define PROYECTOPROGRAIII_NEURONALNETWORK_H
 
-
 #include <iostream>
 #include <Eigen/Dense>
 
@@ -20,6 +19,7 @@
 #include <queue>
 #include <vector>
 #include <cmath>
+#include <functional>
 
 using namespace std;
 using namespace cv;
@@ -51,7 +51,19 @@ private:
 
     unordered_map<double,int> um1;
     priority_queue<double,vector<double>,greater<>> pq1;
-    unordered_map<int, double> digitos;
+
+    vector<pair<int,double>> resultado;
+
+    /* No puedo declarar un pq de esta manera como atributos privados, pero si en las funciones.
+
+    priority_queue<pair<int,double>, vector<pair<int,double>>,
+    function<bool(const pair<int, double>& a, const pair<int,double>& b)>> digitos (
+            [](const pair<int, double>& a, const pair<int,double>& b){
+                return a.second < b.second;
+            }
+         );
+
+         */
 
     static double sigmoid(double x);
     static VectorXd softMax(const VectorXd& x);
@@ -85,6 +97,5 @@ public:
     void Iteraciones();
     void resultados();
 };
-
 
 #endif //PROYECTOPROGRAIII_NEURONALNETWORK_H

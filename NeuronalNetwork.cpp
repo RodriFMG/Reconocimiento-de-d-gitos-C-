@@ -1,7 +1,3 @@
-//
-// Created by RODRIGO on 13/12/2023.
-//
-
 #include "NeuronalNetwork.h"
 
 VectorXd NeuronalNetwork::MatToVector(const cv::Mat &cv) {
@@ -224,20 +220,27 @@ void NeuronalNetwork::Iteraciones(){
 
 }
 
+
+
 void NeuronalNetwork::resultados() {
-    digitos[0] = capfinal[0];
-    digitos[1] = capfinal[1];
-    digitos[2] = capfinal[2];
-    digitos[3] = capfinal[3];
-    digitos[4] = capfinal[4];
-    digitos[5] = capfinal[5];
-    digitos[6] = capfinal[6];
-    digitos[7] = capfinal[7];
-    digitos[8] = capfinal[8];
-    digitos[9] = capfinal[9];
+    priority_queue<pair<int,double>, vector<pair<int,double>>,
+            function<bool(const pair<int, double>& a, const pair<int,double>& b)>> digitos (
+            [](const pair<int, double>& a, const pair<int,double>& b){
+                return a.second < b.second;
+            }
+    );
+
+    for(int i=0; i<10; ++i){
+        digitos.emplace(i,capfinal[i]);
+    }
+
+    while(!empty(digitos)){
+        resultado.push_back(digitos.top());
+        digitos.pop();
+    }
 
     double sum{};
-    for(const auto&[f,s] : digitos){
+    for(const auto&[f,s] : resultado){
         cout<<"Digito "<<f<<": "<<s<<endl;
         sum+=s;
     }
@@ -246,6 +249,3 @@ void NeuronalNetwork::resultados() {
     cout<<"Probabilidad total: "<<sum<<endl;
     cout<<"Costo total: "<<error<<endl;
 }
-
-
-

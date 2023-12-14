@@ -118,6 +118,30 @@ Reconocimiento-de-d-gitos-C-\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build
 .PHONY : Reconocimiento-de-d-gitos-C-\fast
 
+NeuronalNetwork.obj: NeuronalNetwork.cpp.obj
+.PHONY : NeuronalNetwork.obj
+
+# target to build an object file
+NeuronalNetwork.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\NeuronalNetwork.cpp.obj
+.PHONY : NeuronalNetwork.cpp.obj
+
+NeuronalNetwork.i: NeuronalNetwork.cpp.i
+.PHONY : NeuronalNetwork.i
+
+# target to preprocess a source file
+NeuronalNetwork.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\NeuronalNetwork.cpp.i
+.PHONY : NeuronalNetwork.cpp.i
+
+NeuronalNetwork.s: NeuronalNetwork.cpp.s
+.PHONY : NeuronalNetwork.s
+
+# target to generate assembly for a file
+NeuronalNetwork.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\NeuronalNetwork.cpp.s
+.PHONY : NeuronalNetwork.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -151,6 +175,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Reconocimiento-de-d-gitos-C-
+	@echo ... NeuronalNetwork.obj
+	@echo ... NeuronalNetwork.i
+	@echo ... NeuronalNetwork.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

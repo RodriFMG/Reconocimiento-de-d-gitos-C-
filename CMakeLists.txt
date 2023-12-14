@@ -15,7 +15,8 @@ FIND_PACKAGE(OpenCV REQUIRED)
 set(OpenCV_FOUND TRUE)
 
 
-add_executable(Reconocimiento-de-d-gitos-C- main.cpp)
+add_executable(Reconocimiento-de-d-gitos-C- main.cpp
+        NeuronalNetwork.cpp)
 
 set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
 

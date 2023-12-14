@@ -90,6 +90,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/NeuronalNetwork.cpp">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
+		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/NeuronalNetwork.h">
+			<Option target="Reconocimiento-de-d-gitos-C-"/>
+		</Unit>
 		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/main.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
