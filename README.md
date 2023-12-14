@@ -27,6 +27,17 @@ Configurar OpenCV puede ser más complejo y puede implicar ajustes en las variab
 
 Ten en cuenta que el video utiliza una versión anterior de OpenCV, pero podrías necesitar ajustar las variables de entorno para trabajar con "vc16". Después de modificar las variables de entorno, reinicia tu dispositivo.
 
+### Configuraciones adicionales:
+- Modifica las rutas de las imágenes ubicadas en el main según la ubicación real de las imágenes que planeas utilizar.
+- En el CMakeLists tendrás que modificar la ruta del Eigen:
+  ```
+  cmake_minimum_required(VERSION 3.26)
+    project(Reconocimiento-de-d-gitos-C-)
+    set(CMAKE_CXX_STANDARD 23)
+
+    set(EIGEN_DIR "[Ruta]/Reconocimiento-de-d-gitos-C-/cmake-build-debug/eigen-3.4.0")
+    set(ENV{OPENCV_DIR} "C:\\tools\\opencv\\build")
+  ```
 
 ## Referencia:
 - Canal de YT de [Ethernel Tech](https://www.youtube.com/@ethernel) (video y repostiorio)
