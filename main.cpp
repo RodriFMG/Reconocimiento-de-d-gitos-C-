@@ -1,5 +1,5 @@
 #include <iostream>
-#include "NeuralNetwork.h"
+#include "NeuronalNetwork.h"
 
 int main() {
 
