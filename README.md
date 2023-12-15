@@ -1,7 +1,8 @@
 En este repositorio se encuentra el enunciado 1 del proyecto de programación 3.  
-Se implementó una red neuronal con la capacidad de reconocer dígitos mediante una infraestructura de feed forward.
+Se implementó una red neuronal con la capacidad de reconocer dígitos mediante una infraestructura de feed forward con el método de entrenamiento one-hot.  
+Se realizó en el lenguaje de programación C++ en el IDE (Entorno de Desarrollo Integrado) CLion.
 
-# Configuración del Proyecto
+# Configuración del Clion
 
 ## CMakeLists
 
@@ -18,7 +19,15 @@ Esta sección es crucial para el proyecto, ya que involucra la configuración de
     
     ```
 
-3. Verifica las rutas en el archivo `CMakeLists.txt` para asegurarte de que las referencias a Eigen estén correctamente configuradas.
+3. Modificar la ruta en el archivo `CMakeLists.txt` para que la referencia a Eigen esté correctamente configurada.
+   
+   ```
+   cmake_minimum_required(VERSION 3.26)
+   project(Reconocimiento-de-d-gitos-C-)
+   set(CMAKE_CXX_STANDARD 23)
+   
+   set(EIGEN_DIR "[Ruta]/Reconocimiento-de-d-gitos-C-/cmake-build-debug/eigen-3.4.0")
+   ```
 
 ### Configuración de OpenCV
 
@@ -32,15 +41,6 @@ Ten en cuenta que el video utiliza una versión anterior de OpenCV, pero podría
 
 ### Configuraciones adicionales:
 - Modifica las rutas de las imágenes ubicadas en el main según la ubicación real de las imágenes que planeas utilizar.
-- En el CMakeLists tendrás que modificar la ruta del Eigen:
-  ```
-  cmake_minimum_required(VERSION 3.26)
-    project(Reconocimiento-de-d-gitos-C-)
-    set(CMAKE_CXX_STANDARD 23)
-
-    set(EIGEN_DIR "[Ruta]/Reconocimiento-de-d-gitos-C-/cmake-build-debug/eigen-3.4.0")
-    set(ENV{OPENCV_DIR} "C:\\tools\\opencv\\build")
-  ```
 
 ## Referencia:
 - Canal de YT de [Ethernel Tech](https://www.youtube.com/@ethernel) (video y repostiorio)
