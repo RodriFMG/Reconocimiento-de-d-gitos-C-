@@ -4,17 +4,20 @@
 
 #include "NeuronalNetwork.h"
 
+// Las derivadas de las funciones de activación nos servirán para el proceso del backpropagation.
+
 double NeuronalNetwork::derivada_sigmoid(double x) {
+
     /* Hay 2 formas: Derivando simplemente el sigmoide
     return (exp(-x)/pow((1+exp(-x)),2));
     */
 
-    // O... (más optima por no usar el pow())
+    // O... la menos compleja (por no usar el pow)
     return sigmoid(x) * (1.0 - sigmoid(x));
 }
 
+// No se utilizó, pero porsiacaso la dejaré.
 VectorXd NeuronalNetwork::derivada_softMax(const Eigen::VectorXd &x) {
-    return softMax(x).array() * (1 - softMax(x).array());
 
     /*  Esto es equivalente:
             VectorXd SM = softMax(x);
@@ -26,4 +29,7 @@ VectorXd NeuronalNetwork::derivada_softMax(const Eigen::VectorXd &x) {
 
         return retorno;
      */
+
+    // Menos compleja al trabajar directamente con comandos de la librería eigen.
+    return softMax(x).array() * (1 - softMax(x).array());
 }
