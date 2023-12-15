@@ -27,73 +27,71 @@ using namespace Eigen;
 
 class NeuronalNetwork {
 private:
-    int n1, n2, n3;
-    Index indice;
-    int iteraciones;
-    double error{};
+    int n1, n2, n3; // Dimensiones que tendrán los vectores y matrices eigen.
 
-    double factor_xavier{};
-    double tasa_aprendizaje = 0.001;
+    MatrixXd w1, w2, w3; // Matrices eigen de pesos (matriz de los enlaces entre capas).
 
-    MatrixXd w1, w2, w3; //matriz de pesos: entrada - salida
+    VectorXd b1, b2, b3; // Vector eigen de sesgos (b1 es el vector de sesgos para cap2, b2 para cap3 y b3 para capfinal).
 
-    VectorXd b1, b2, b3; // Vector de sesgos de cada neurona en cada capa.
+    VectorXd cap1, cap2, cap3, capfinal; // Vector eigen de neuronas por capa.
 
-    VectorXd cap1, cap2, cap3; // neruonas de: capa de entrada - capa ocultas - capa final
+    VectorXd z1, z2, z3; // Vector eigen de los scores en la operación de: z = w * cap + b.
 
-    VectorXd z1, z2, z3; // enlaces entre la capa anterior con la capa posterior de: (z representa los scores)
-    // capa input con capa de oculta - capa de entrada con capa oculta - capa oculta con la ultima capa
+    VectorXd etiqueta_real; // Vector eigen one-hot para el entrenamiento (osea 1 para el valor correcto y 0 para los demás).
 
-    //Es un paso para conseguir la matriz de pesos
-
-    VectorXd capfinal; //Este será el vector del resultado esperado
-    VectorXd etiqueta_real;
-
+    // Se usaron para la normalización de px de la imagen para la capa de entrada.
     unordered_map<double,int> um1;
     priority_queue<double,vector<double>,greater<>> pq1;
 
-    vector<pair<int,double>> resultado;
+    double factor_xavier{}; // Factor para la inicialización de las matrices de pesos.
 
-    /* No puedo declarar un pq de esta manera como atributos privados, pero si en las funciones.
+    double tasa_aprendizaje = 0.001; // Tasa de aprendizaje colocada (para el entrenamiento).
 
-    priority_queue<pair<int,double>, vector<pair<int,double>>,
-    function<bool(const pair<int, double>& a, const pair<int,double>& b)>> digitos (
-            [](const pair<int, double>& a, const pair<int,double>& b){
-                return a.second < b.second;
-            }
-         );
+    Index indice; // Índice del número de la imagen en el vector de resultados (utilizado para el vector one-hot).
 
-         */
+    int iteraciones; // Número de veces que se repetirá el proceso. (para repetir la propagación para adelante y atrás).
 
-    static double sigmoid(double x);
-    static VectorXd softMax(const VectorXd& x);
-    static VectorXd Relu(const VectorXd& eigen);
-    //static se pone cuando quiero llamar a la función sin usar ni un atributo privado de la clase
-    //(no crea una instancia de la clase)
+    double error{}; // Guarda el costo final del proceso.
 
-    static double derivada_sigmoid(double x);
-    static VectorXd derivada_softMax(const VectorXd& x);
-
-
+    vector<pair<int,double>> resultado; // Vector normal donde se guardarán los resultados al final del proceso.
 
 public:
-    NeuronalNetwork(const Mat& img, int n1, int n2, int n3, int iteraciones, int indice);
-    ~NeuronalNetwork();
 
-    void forwardPropagation();
-    void backPropagation();
+    // Orden para estudiar el código:
 
-    [[nodiscard]] double Funcion_Perdida(const VectorXd& Nuevo) const ;
-    [[nodiscard]] VectorXd Gradiante_Funcion_Perdida(const VectorXd& SoftMax);
-
+    // Normalización de la capa de entrada
     static VectorXd MatToVector(const Mat& cv);
     void VectorXdToUnorderedMap(const VectorXd& a);
     int minima_frecuencia_px();
+
+    // Capa de entrada
     VectorXd neuronas_entrada(int divisor);
+
+    // Red neuronal
+    NeuronalNetwork(const Mat& img, int n1, int n2, int n3, int iteraciones, int indice);
+    ~NeuronalNetwork();
     void inicializar_capas(const Mat& img);
     void inicializacion_Xavier();
-    Index Prediccion();
 
+    // Funciones de activación (FA)
+    static double sigmoid(double x);
+    static VectorXd softMax(const VectorXd& x);
+    static VectorXd Relu(const VectorXd& eigen);
+
+    // Derivadas de las funciones de activación
+    static double derivada_sigmoid(double x);
+    static VectorXd derivada_softMax(const VectorXd& x);
+
+    // Descenso del gradiante
+    [[nodiscard]] double Funcion_Perdida(const VectorXd& Nuevo) const ;
+    [[nodiscard]] VectorXd Gradiante_Funcion_Perdida(const VectorXd& SoftMax);
+
+    // Propagación
+    void forwardPropagation();
+    void backPropagation();
+
+    // Resultados
+    Index Prediccion();
     void Iteraciones();
     void resultados();
 };
