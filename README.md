@@ -1,5 +1,5 @@
-En este repositorio se encuentra el enunciado 1 del proyecto de programación 3.
-Se implementó una red neuronal con la capacidad de reconocer dígitos mediante una infraestructura de feed forward con el método de entrenamiento one-hot.
+En este repositorio se encuentra el enunciado 1 del proyecto de programación 3.  
+Se implementó una red neuronal con la capacidad de reconocer dígitos mediante una infraestructura de feed forward con el método de entrenamiento one-hot.  
 Se realizo en el lenguaje de programación c++ en el IDE (Entorno de Desarrollo Integrado) Clion.
 
 # Configuración del Clion
