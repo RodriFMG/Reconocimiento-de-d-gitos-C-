@@ -27,7 +27,6 @@ Esta sección es crucial para el proyecto, ya que involucra la configuración de
    set(CMAKE_CXX_STANDARD 23)
    
    set(EIGEN_DIR "[Ruta]/Reconocimiento-de-d-gitos-C-/cmake-build-debug/eigen-3.4.0")
-   set(ENV{OPENCV_DIR} "C:\\tools\\opencv\\build")
    ```
 
 ### Configuración de OpenCV
