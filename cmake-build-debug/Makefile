@@ -46,10 +46,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-
+CMAKE_SOURCE_DIR = C:\Users\RODRIGO\Push_Nuevo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\CMakeFiles C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\CMakeFiles C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -106,48 +106,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Reconocimiento-de-d-gitos-C-
+# Target rules for targets named Push_Nuevo
 
 # Build rule for target.
-Reconocimiento-de-d-gitos-C-: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Reconocimiento-de-d-gitos-C-
-.PHONY : Reconocimiento-de-d-gitos-C-
+Push_Nuevo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Push_Nuevo
+.PHONY : Push_Nuevo
 
 # fast build rule for target.
-Reconocimiento-de-d-gitos-C-\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build
-.PHONY : Reconocimiento-de-d-gitos-C-\fast
-
-Capa_Entrada.obj: Capa_Entrada.cpp.obj
-.PHONY : Capa_Entrada.obj
-
-# target to build an object file
-Capa_Entrada.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Capa_Entrada.cpp.obj
-.PHONY : Capa_Entrada.cpp.obj
-
-Capa_Entrada.i: Capa_Entrada.cpp.i
-.PHONY : Capa_Entrada.i
-
-# target to preprocess a source file
-Capa_Entrada.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Capa_Entrada.cpp.i
-.PHONY : Capa_Entrada.cpp.i
-
-Capa_Entrada.s: Capa_Entrada.cpp.s
-.PHONY : Capa_Entrada.s
-
-# target to generate assembly for a file
-Capa_Entrada.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Capa_Entrada.cpp.s
-.PHONY : Capa_Entrada.cpp.s
+Push_Nuevo\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\build
+.PHONY : Push_Nuevo\fast
 
 Derivadas_Funciones_Activacion.obj: Derivadas_Funciones_Activacion.cpp.obj
 .PHONY : Derivadas_Funciones_Activacion.obj
 
 # target to build an object file
 Derivadas_Funciones_Activacion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Derivadas_Funciones_Activacion.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Derivadas_Funciones_Activacion.cpp.obj
 .PHONY : Derivadas_Funciones_Activacion.cpp.obj
 
 Derivadas_Funciones_Activacion.i: Derivadas_Funciones_Activacion.cpp.i
@@ -155,7 +131,7 @@ Derivadas_Funciones_Activacion.i: Derivadas_Funciones_Activacion.cpp.i
 
 # target to preprocess a source file
 Derivadas_Funciones_Activacion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Derivadas_Funciones_Activacion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Derivadas_Funciones_Activacion.cpp.i
 .PHONY : Derivadas_Funciones_Activacion.cpp.i
 
 Derivadas_Funciones_Activacion.s: Derivadas_Funciones_Activacion.cpp.s
@@ -163,7 +139,7 @@ Derivadas_Funciones_Activacion.s: Derivadas_Funciones_Activacion.cpp.s
 
 # target to generate assembly for a file
 Derivadas_Funciones_Activacion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Derivadas_Funciones_Activacion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Derivadas_Funciones_Activacion.cpp.s
 .PHONY : Derivadas_Funciones_Activacion.cpp.s
 
 Descenso_Gradiante.obj: Descenso_Gradiante.cpp.obj
@@ -171,7 +147,7 @@ Descenso_Gradiante.obj: Descenso_Gradiante.cpp.obj
 
 # target to build an object file
 Descenso_Gradiante.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Descenso_Gradiante.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Descenso_Gradiante.cpp.obj
 .PHONY : Descenso_Gradiante.cpp.obj
 
 Descenso_Gradiante.i: Descenso_Gradiante.cpp.i
@@ -179,7 +155,7 @@ Descenso_Gradiante.i: Descenso_Gradiante.cpp.i
 
 # target to preprocess a source file
 Descenso_Gradiante.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Descenso_Gradiante.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Descenso_Gradiante.cpp.i
 .PHONY : Descenso_Gradiante.cpp.i
 
 Descenso_Gradiante.s: Descenso_Gradiante.cpp.s
@@ -187,15 +163,39 @@ Descenso_Gradiante.s: Descenso_Gradiante.cpp.s
 
 # target to generate assembly for a file
 Descenso_Gradiante.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Descenso_Gradiante.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Descenso_Gradiante.cpp.s
 .PHONY : Descenso_Gradiante.cpp.s
+
+Entrenamiento_Entrada_Datos.obj: Entrenamiento_Entrada_Datos.cpp.obj
+.PHONY : Entrenamiento_Entrada_Datos.obj
+
+# target to build an object file
+Entrenamiento_Entrada_Datos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Entrenamiento_Entrada_Datos.cpp.obj
+.PHONY : Entrenamiento_Entrada_Datos.cpp.obj
+
+Entrenamiento_Entrada_Datos.i: Entrenamiento_Entrada_Datos.cpp.i
+.PHONY : Entrenamiento_Entrada_Datos.i
+
+# target to preprocess a source file
+Entrenamiento_Entrada_Datos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Entrenamiento_Entrada_Datos.cpp.i
+.PHONY : Entrenamiento_Entrada_Datos.cpp.i
+
+Entrenamiento_Entrada_Datos.s: Entrenamiento_Entrada_Datos.cpp.s
+.PHONY : Entrenamiento_Entrada_Datos.s
+
+# target to generate assembly for a file
+Entrenamiento_Entrada_Datos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Entrenamiento_Entrada_Datos.cpp.s
+.PHONY : Entrenamiento_Entrada_Datos.cpp.s
 
 Funciones_activacion.obj: Funciones_activacion.cpp.obj
 .PHONY : Funciones_activacion.obj
 
 # target to build an object file
 Funciones_activacion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Funciones_activacion.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Funciones_activacion.cpp.obj
 .PHONY : Funciones_activacion.cpp.obj
 
 Funciones_activacion.i: Funciones_activacion.cpp.i
@@ -203,7 +203,7 @@ Funciones_activacion.i: Funciones_activacion.cpp.i
 
 # target to preprocess a source file
 Funciones_activacion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Funciones_activacion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Funciones_activacion.cpp.i
 .PHONY : Funciones_activacion.cpp.i
 
 Funciones_activacion.s: Funciones_activacion.cpp.s
@@ -211,39 +211,15 @@ Funciones_activacion.s: Funciones_activacion.cpp.s
 
 # target to generate assembly for a file
 Funciones_activacion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Funciones_activacion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Funciones_activacion.cpp.s
 .PHONY : Funciones_activacion.cpp.s
-
-Normalizacion_Capa_Entrada.obj: Normalizacion_Capa_Entrada.cpp.obj
-.PHONY : Normalizacion_Capa_Entrada.obj
-
-# target to build an object file
-Normalizacion_Capa_Entrada.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Normalizacion_Capa_Entrada.cpp.obj
-.PHONY : Normalizacion_Capa_Entrada.cpp.obj
-
-Normalizacion_Capa_Entrada.i: Normalizacion_Capa_Entrada.cpp.i
-.PHONY : Normalizacion_Capa_Entrada.i
-
-# target to preprocess a source file
-Normalizacion_Capa_Entrada.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Normalizacion_Capa_Entrada.cpp.i
-.PHONY : Normalizacion_Capa_Entrada.cpp.i
-
-Normalizacion_Capa_Entrada.s: Normalizacion_Capa_Entrada.cpp.s
-.PHONY : Normalizacion_Capa_Entrada.s
-
-# target to generate assembly for a file
-Normalizacion_Capa_Entrada.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Normalizacion_Capa_Entrada.cpp.s
-.PHONY : Normalizacion_Capa_Entrada.cpp.s
 
 Propagacion.obj: Propagacion.cpp.obj
 .PHONY : Propagacion.obj
 
 # target to build an object file
 Propagacion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Propagacion.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Propagacion.cpp.obj
 .PHONY : Propagacion.cpp.obj
 
 Propagacion.i: Propagacion.cpp.i
@@ -251,7 +227,7 @@ Propagacion.i: Propagacion.cpp.i
 
 # target to preprocess a source file
 Propagacion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Propagacion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Propagacion.cpp.i
 .PHONY : Propagacion.cpp.i
 
 Propagacion.s: Propagacion.cpp.s
@@ -259,7 +235,7 @@ Propagacion.s: Propagacion.cpp.s
 
 # target to generate assembly for a file
 Propagacion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Propagacion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Propagacion.cpp.s
 .PHONY : Propagacion.cpp.s
 
 RedNeuronal.obj: RedNeuronal.cpp.obj
@@ -267,7 +243,7 @@ RedNeuronal.obj: RedNeuronal.cpp.obj
 
 # target to build an object file
 RedNeuronal.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\RedNeuronal.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\RedNeuronal.cpp.obj
 .PHONY : RedNeuronal.cpp.obj
 
 RedNeuronal.i: RedNeuronal.cpp.i
@@ -275,7 +251,7 @@ RedNeuronal.i: RedNeuronal.cpp.i
 
 # target to preprocess a source file
 RedNeuronal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\RedNeuronal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\RedNeuronal.cpp.i
 .PHONY : RedNeuronal.cpp.i
 
 RedNeuronal.s: RedNeuronal.cpp.s
@@ -283,7 +259,7 @@ RedNeuronal.s: RedNeuronal.cpp.s
 
 # target to generate assembly for a file
 RedNeuronal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\RedNeuronal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\RedNeuronal.cpp.s
 .PHONY : RedNeuronal.cpp.s
 
 Resultados.obj: Resultados.cpp.obj
@@ -291,7 +267,7 @@ Resultados.obj: Resultados.cpp.obj
 
 # target to build an object file
 Resultados.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Resultados.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Resultados.cpp.obj
 .PHONY : Resultados.cpp.obj
 
 Resultados.i: Resultados.cpp.i
@@ -299,7 +275,7 @@ Resultados.i: Resultados.cpp.i
 
 # target to preprocess a source file
 Resultados.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Resultados.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Resultados.cpp.i
 .PHONY : Resultados.cpp.i
 
 Resultados.s: Resultados.cpp.s
@@ -307,7 +283,7 @@ Resultados.s: Resultados.cpp.s
 
 # target to generate assembly for a file
 Resultados.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\Resultados.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\Resultados.cpp.s
 .PHONY : Resultados.cpp.s
 
 main.obj: main.cpp.obj
@@ -315,7 +291,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -323,7 +299,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -331,7 +307,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Reconocimiento-de-d-gitos-C-.dir\main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Push_Nuevo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Push_Nuevo.dir\main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -342,22 +318,19 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Reconocimiento-de-d-gitos-C-
-	@echo ... Capa_Entrada.obj
-	@echo ... Capa_Entrada.i
-	@echo ... Capa_Entrada.s
+	@echo ... Push_Nuevo
 	@echo ... Derivadas_Funciones_Activacion.obj
 	@echo ... Derivadas_Funciones_Activacion.i
 	@echo ... Derivadas_Funciones_Activacion.s
 	@echo ... Descenso_Gradiante.obj
 	@echo ... Descenso_Gradiante.i
 	@echo ... Descenso_Gradiante.s
+	@echo ... Entrenamiento_Entrada_Datos.obj
+	@echo ... Entrenamiento_Entrada_Datos.i
+	@echo ... Entrenamiento_Entrada_Datos.s
 	@echo ... Funciones_activacion.obj
 	@echo ... Funciones_activacion.i
 	@echo ... Funciones_activacion.s
-	@echo ... Normalizacion_Capa_Entrada.obj
-	@echo ... Normalizacion_Capa_Entrada.i
-	@echo ... Normalizacion_Capa_Entrada.s
 	@echo ... Propagacion.obj
 	@echo ... Propagacion.i
 	@echo ... Propagacion.s

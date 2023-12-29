@@ -8,34 +8,34 @@
 #include <iostream>
 #include <Eigen/Dense>
 
-#include <opencv2/opencv.hpp>
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/core.hpp>
-#include <opencv2/core/utility.hpp>
-
 #include <unordered_map>
 #include <queue>
 #include <vector>
 #include <cmath>
 #include <functional>
+#include <thread>
+#include <mutex>
+#include <fstream>
+#include <sstream>
 
 using namespace std;
-using namespace cv;
 using namespace Eigen;
+using namespace chrono;
+using namespace this_thread;
 
 class NeuronalNetwork {
 private:
-    int n1, n2, n3; // Dimensiones que tendrán los vectores y matrices eigen.
+    int n1, n2; // Dimensiones que tendrán los vectores y matrices eigen.
 
-    MatrixXd w1, w2, w3; // Matrices eigen de pesos (matriz de los enlaces entre capas).
+    int max_iteraciones_entrenamiento = 25, i{};
 
-    VectorXd b1, b2, b3; // Vector eigen de sesgos (b1 es el vector de sesgos para cap2, b2 para cap3 y b3 para capfinal).
+    MatrixXd w1, w2; // Matrices eigen de pesos (matriz de los enlaces entre capas).
 
-    VectorXd cap1, cap2, cap3, capfinal; // Vector eigen de neuronas por capa.
+    VectorXd b1, b2; // Vector eigen de sesgos (b1 es el vector de sesgos para cap2, b2 para cap3 y b3 para capfinal).
 
-    VectorXd z1, z2, z3; // Vector eigen de los scores en la operación de: z = w * cap + b.
+    VectorXd cap1, cap2, capfinal; // Vector eigen de neuronas por capa.
+
+    VectorXd z1, z2; // Vector eigen de los scores en la operación de: z = w * cap + b.
 
     VectorXd etiqueta_real; // Vector eigen one-hot para el entrenamiento (osea 1 para el valor correcto y 0 para los demás).
 
@@ -45,55 +45,65 @@ private:
 
     double factor_xavier{}; // Factor para la inicialización de las matrices de pesos.
 
-    double tasa_aprendizaje = 0.001; // Tasa de aprendizaje colocada (para el entrenamiento).
+    //Re ajustar la tasa para asegurar al 100% de las predicciones.
+    double tasa_aprendizaje = 0.00001; // Tasa de aprendizaje colocada (para el entrenamiento).
 
-    Index indice; // Índice del número de la imagen en el vector de resultados (utilizado para el vector one-hot).
+    Index indice{}; // Índice del número de la imagen en el vector de resultados (utilizado para el vector one-hot).
+
+    vector<vector<pair<vector<double>, int>>> um; // Contenedor que almacenará por lotes el csv de datos MNIST (pair(px,número-índice))
 
     int iteraciones; // Número de veces que se repetirá el proceso. (para repetir la propagación para adelante y atrás).
 
     double error{}; // Guarda el costo final del proceso.
 
-    vector<pair<int,double>> resultado; // Vector normal donde se guardarán los resultados al final del proceso.
+    string csv_Dato{};
+
+    mutex mtx;
 
 public:
 
     // Orden para estudiar el código:
 
-    // Normalización de la capa de entrada
-    static VectorXd MatToVector(const Mat& cv);
-    void VectorXdToUnorderedMap(const VectorXd& a);
-    int minima_frecuencia_px();
-
-    // Capa de entrada
-    VectorXd neuronas_entrada(int divisor);
+    // Datos de entrada para el entrenamiento (datos MNIST en un csv)
+    static void Concurrencia(vector<vector<pair<vector<double>, int>>>& um, ifstream& file, mutex& mtx, const int& filas, int hilos_pc);
+    void Lectura_Concurrente(const string& fileName);
 
     // Red neuronal
-    NeuronalNetwork(const Mat& img, int n1, int n2, int n3, int iteraciones, int indice);
+    NeuronalNetwork(const string& Datos_Entrenamiento, const string& Dato, int n1, int n2, int iteraciones);
     ~NeuronalNetwork();
-    void inicializar_capas(const Mat& img);
+    void Entrenamiento();
+    void Entrenamiento_Por_Lotes(vector<pair<vector<double>,int>>& Lotes, mutex& mtx);
+    void Digitos_CSV();
     void inicializacion_Xavier();
+    void Cambiando_Datos(VectorXd& Dato_Entrenamiento, const Index& index);
 
     // Funciones de activación (FA)
     static double sigmoid(double x);
-    static VectorXd softMax(const VectorXd& x);
-    static VectorXd Relu(const VectorXd& eigen);
+    static VectorXd softMax(const VectorXd& vector);
+    [[maybe_unused]] static double Relu( double eigen);
+    static double leakyRelu(double x, double alpha);
 
     // Derivadas de las funciones de activación
     static double derivada_sigmoid(double x);
-    static VectorXd derivada_softMax(const VectorXd& x);
+    [[maybe_unused]] static VectorXd derivada_softMax(const VectorXd& x);
+    static double derivada_Relu(double x);
+    static double derivada_leakyRelu(double x, double alpha);
 
     // Descenso del gradiante
-    [[nodiscard]] double Funcion_Perdida(const VectorXd& Nuevo) const ;
+    [[nodiscard]] double Funcion_Perdida(const VectorXd& Nuevo, Index index) const ;
     [[nodiscard]] VectorXd Gradiante_Funcion_Perdida(const VectorXd& SoftMax);
 
     // Propagación
-    void forwardPropagation();
-    void backPropagation();
+    void forwardPropagation(mutex& mtx);
+    void backPropagation(mutex& mtx, Index index);
 
     // Resultados
-    Index Prediccion();
-    void Iteraciones();
-    void resultados();
+
+
+    VectorXd Sacar_Dato(const int& fila);
+    void Prediccion(const int& fila);
+    void resultados(const int& fila);
+
 };
 
 #endif //PROYECTOPROGRAIII_NEURONALNETWORK_H

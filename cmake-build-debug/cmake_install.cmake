@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-
+# Install script for directory: C:/Users/RODRIGO/Push_Nuevo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ProyectoPrograIII")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Reconocimiento-de-d-gitos-C-")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

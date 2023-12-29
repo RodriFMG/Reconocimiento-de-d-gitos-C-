@@ -7,17 +7,10 @@
 // Se aplica el factor xavier para conseguir matrices de pesos apropiados.
 // (No es necesario si se trabaja con pocas capas, pero igual lo utilice)
 void NeuronalNetwork::inicializacion_Xavier() {
-    factor_xavier = sqrt(2.0/(static_cast<int>(cap1.size()) + n3));
+    factor_xavier = sqrt(2.0/(static_cast<int>(cap1.size()) + n2));
 }
 
-void NeuronalNetwork::inicializar_capas(const Mat& img) {
-
-    // Llamo a las funciones para conseguir el vector de neuronas para la capa de entrada.
-    VectorXd guardar1 = MatToVector(img);
-    VectorXdToUnorderedMap(guardar1);
-    int divisor = minima_frecuencia_px();
-
-    inicializacion_Xavier();
+void NeuronalNetwork::Entrenamiento(){
 
     // Se definen previamente las dimensiones de los vectores y matrices eigen, ya que, si no se define fallará el programa.
     // Es fundamental definir correctamente las dimensiones para poder realizar las operaciones entre matrices-vectores.
@@ -28,26 +21,57 @@ void NeuronalNetwork::inicializar_capas(const Mat& img) {
     // Dimension para el vector de sesgos: (n)
     // Dimension para el vector de scores: (n)
 
-    cap1 = neuronas_entrada(divisor);
-    w1 = MatrixXd::Random(n1, cap1.size()) * factor_xavier;
-    z1 = VectorXd::Zero(cap1.size());
+    //cap1 tiene 784 de tamaño.
+    cap1 = VectorXd::Zero(784);
 
+    inicializacion_Xavier();
+
+    w1 = MatrixXd::Random(n1, 784) * factor_xavier;
+    z1 = VectorXd::Zero(n1);
     b1 = VectorXd::Zero(n1);
+
+
     w2 = MatrixXd::Random(n2, n1) * factor_xavier;
     cap2 = VectorXd::Zero(n1);
-    z2 = VectorXd::Zero(n1);
-
+    z2 = VectorXd::Zero(n2);
     b2 = VectorXd::Zero(n2);
-    w3 = MatrixXd::Random(n3, n2) * factor_xavier;
-    cap3 = VectorXd::Zero(n2);
-    z3 = VectorXd::Zero(n2);
 
-    b3 = VectorXd::Zero(n3);
-    capfinal = VectorXd::Zero(n3);
+    capfinal = VectorXd::Zero(n2);
 
     // VectorXd para el método de entrenamiento: One-Hot
-    etiqueta_real = VectorXd::Zero(n3);
-    etiqueta_real[indice] = 1;
+    etiqueta_real = VectorXd::Zero(n2);
+}
+
+void NeuronalNetwork::Cambiando_Datos(VectorXd& Dato_Entrenamiento, const Index& index){
+    cap1 = Map<VectorXd>(Dato_Entrenamiento.data(),Dato_Entrenamiento.size());
+    etiqueta_real[index] = 1;
+}
+
+//puede que falle...
+void NeuronalNetwork::Entrenamiento_Por_Lotes(vector<pair<vector<double>,int>>& Lotes, mutex& mtx){
+
+    for(auto& [px,index] : Lotes){
+        VectorXd Digito = Map<VectorXd>(&px[0], static_cast<Index>(px.size()));
+        auto Indice = static_cast<Index>(index);
+
+        Cambiando_Datos(Digito,Indice);
+        backPropagation(mtx, Indice);
+        etiqueta_real = VectorXd::Zero(n2);
+
+    }
+
+}
+
+void NeuronalNetwork::Digitos_CSV() {
+
+    Entrenamiento();
+
+    for(int i=0; i < iteraciones; ++i){
+        for(auto pairs : um){
+            Entrenamiento_Por_Lotes(pairs,mtx);
+        }
+    }
+
 }
 
 // Constructor para definir las dimensiones, número de iteraciones (para el entrenamiento) y el índice del dígito
@@ -55,14 +79,16 @@ void NeuronalNetwork::inicializar_capas(const Mat& img) {
 
 // La imagen se utiliza para la conversión de px a enteros, normalización y finalmente utilizarlo para
 // asignar cada valor para cada neurona en la capa de entrada.
-NeuronalNetwork::NeuronalNetwork(const Mat& img, int n1_1, int n2_1, int n3_1, int iter, int ind){
+NeuronalNetwork::NeuronalNetwork(const string& Datos_Entrenamiento, const string& Dato, int n1_1, int n2_1,
+                                 int iter){
     n1 = n1_1;
     n2 = n2_1;
-    n3 = n3_1;
     iteraciones = iter;
-    indice = static_cast<Index>(ind);
+    csv_Dato = Dato;
 
-    inicializar_capas(img);
+    Lectura_Concurrente(Datos_Entrenamiento);
+    Digitos_CSV();
+
 }
 
 NeuronalNetwork::~NeuronalNetwork() = default;

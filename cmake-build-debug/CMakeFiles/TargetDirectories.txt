@@ -1,3 +1,3 @@
-C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug/CMakeFiles/Reconocimiento-de-d-gitos-C-.dir
-C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug/CMakeFiles/Push_Nuevo.dir
+C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

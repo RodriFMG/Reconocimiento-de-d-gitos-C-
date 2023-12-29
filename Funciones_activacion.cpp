@@ -14,14 +14,44 @@ double NeuronalNetwork::sigmoid(double x) {
     return 1.0 / (1.0 + exp(-x));
 }
 
-VectorXd  NeuronalNetwork::softMax(const VectorXd& x) {
-    VectorXd exp_xd = x.array().exp();
-    double sum_xd = exp_xd.sum();
+VectorXd NeuronalNetwork::softMax(const VectorXd& x) {
+    double max_x = x.maxCoeff();
+    VectorXd exp_xd = VectorXd::Zero(x.size());
 
-    return exp_xd / sum_xd;
+    for(int i=0; i<x.size(); ++i){
+        exp_xd[i] = exp(x[i] - max_x);
+    }
+
+    double sum_exp_xd = exp_xd.sum();
+
+    return exp_xd / ((sum_exp_xd==0) ? 1 : sum_exp_xd);
 }
 
 // No se utilizó, pero porsiacaso lo dejaré.
-VectorXd NeuronalNetwork::Relu(const VectorXd& eigen) {
-    return eigen.cwiseMax(0.0);
+[[maybe_unused]] double NeuronalNetwork::Relu(double x) {
+    /*
+    VectorXd Relu = VectorXd::Zero(eigen.size());
+
+    for(int i=0; i<eigen.size(); ++i){
+        (eigen[i]>0) ? Relu[i] = eigen[i] : Relu[i] = 0;
+    }
+
+    return Relu;
+     */
+
+    //Otr forma
+
+    const double max_val = 1e9;
+    const double min_val = -1e9;
+    x = max(min_val, min(max_val, x));
+
+    return (x>=0) ? x : abs(0);
+}
+
+double NeuronalNetwork::leakyRelu(double x, double alpha) {
+    const double max_val = 1e9;
+    const double min_val = -1e9;
+    x = max(min_val, min(max_val, x));
+
+    return (x > 0) ? x : x * alpha;
 }

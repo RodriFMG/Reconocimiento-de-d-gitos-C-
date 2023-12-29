@@ -1,26 +1,62 @@
-//
-// Created by RODRIGO on 14/12/2023.
-//
-
 #include "NeuronalNetwork.h"
 
-//Esta función sirve para obtener el índice con mayor valor del vector de la capa final.
-Index NeuronalNetwork::Prediccion() {
-    Index maxIndex;
-    capfinal.maxCoeff(&maxIndex); // Obtiene el índice del mayor valor.
-    return maxIndex;
+VectorXd NeuronalNetwork::Sacar_Dato(const int& fila_csv) {
+
+    ifstream csv_dato(csv_Dato);
+    if (!csv_dato.is_open()) {
+        cerr << "Error: No se pudo abrir el archivo CSV." << std::endl;
+    }
+
+
+    vector<int> px_digito;
+
+    string line;
+    bool solo_uno = false;
+    int i{};
+
+    while (getline(csv_dato, line)) {
+        stringstream lineStream(line);
+        string cell;
+
+        if(i<fila_csv-1){
+            ++i;
+            continue;
+        }
+        else{
+            while (getline(lineStream, cell, ',')) {
+                if (!solo_uno) {
+                    solo_uno = true;
+                    continue;
+                }
+                int datos = std::stoi(cell);
+                px_digito.push_back(datos);
+            }
+            break;
+        }
+    }
+
+    VectorXd retorno = VectorXd::Zero(static_cast<Index>(px_digito.size()));
+
+    for(int j=0; j<px_digito.size(); ++j){
+        retorno[j] = px_digito[j];
+    }
+
+    return retorno;
 }
 
-// Función para realizar el proceso la cantidad de veces definidas en el constructor.
-void NeuronalNetwork::Iteraciones(){
-    for(int i=0; i<iteraciones; ++i){
-        backPropagation();
-    }
+void NeuronalNetwork::Prediccion(const int& fila) {
+
+    cap1 = Sacar_Dato(fila);
+
+    forwardPropagation(mtx);
 }
 
 // Función para obtener los resultados (Se utiliza después de la función de "Iteraciones", para obtener los
-// resultados finales después de todo el proceso)
-void NeuronalNetwork::resultados() {
+// resultados finales después el proceso)
+void NeuronalNetwork::resultados(const int& fila_csv) {
+
+    Prediccion(fila_csv);
+    vector<pair<int,double>> resultado(10);
 
     // preority_queue creado para ordenar los resultados de manera descendente.
     // En el pair, el int se refiere al dígito y el double a la probabilidad de que la imagen le pertenezca a ese dígito.
@@ -31,14 +67,17 @@ void NeuronalNetwork::resultados() {
             }
     );
 
+
     for(int i=0; i<10; ++i){
         digitos.emplace(i,capfinal[i]);
     }
 
     // Asigno a un vector (normal) los datos ordenados previamente.
+    int j{};
     while(!empty(digitos)){
-        resultado.push_back(digitos.top());
+        resultado[j] = (digitos.top());
         digitos.pop();
+        ++j;
     }
 
     double sum{};
@@ -55,4 +94,6 @@ void NeuronalNetwork::resultados() {
 
     // Se utilizo para visualizar el costo que obtuvo el dígito que se buscaba al final del proceso.
     cout<<"Costo total: "<<error<<endl;
+
+    sum=0;
 }

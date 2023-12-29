@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\tools\;CMake Files\..\..\..\tools\opencv\;CMake Files\..\..\..\tools\opencv\build\;CMake Files\..\..\..\tools\opencv\build\x64\;CMake Files\..\..\..\tools\opencv\build\x64\vc16\;CMake Files\..\..\..\tools\opencv\build\x64\vc16\lib\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug"/>
+				<Option working_dir="C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Reconocimiento-de-d-gitos-C-">
-				<Option output="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug/Reconocimiento-de-d-gitos-C-.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug"/>
+				<Option output="C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug/Reconocimiento-de-d-gitos-C-.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -37,15 +37,15 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 Reconocimiento-de-d-gitos-C-"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 Reconocimiento-de-d-gitos-C-"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Reconocimiento-de-d-gitos-C-/fast">
-				<Option output="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug/Reconocimiento-de-d-gitos-C-.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug"/>
+				<Option output="C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug/Reconocimiento-de-d-gitos-C-.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -63,79 +63,79 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 Reconocimiento-de-d-gitos-C-/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 Reconocimiento-de-d-gitos-C-/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug"/>
+				<Option working_dir="C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/cmake-build-debug"/>
+				<Option working_dir="C:/Users/RODRIGO/Push_Nuevo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Reconocimiento-de-d-gitos-C-\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\RODRIGO\Push_Nuevo\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Capa_Entrada.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/Derivadas_Funciones_Activacion.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Derivadas_Funciones_Activacion.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/Descenso_Gradiante.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Descenso_Gradiante.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/Entrenamiento_Entrada_Datos.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Funciones_activacion.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/Funciones_activacion.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Normalizacion_Capa_Entrada.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/Normalizacion_Capa_Entrada.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Propagacion.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/Propagacion.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/RedNeuronal.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/RedNeuronal.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/Resultados.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/Resultados.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/main.cpp">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/main.cpp">
 			<Option target="Reconocimiento-de-d-gitos-C-"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/CMakeLists.txt">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/../../../tools/opencv/build/OpenCVConfig-version.cmake">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/../../../tools/opencv/build/OpenCVConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\tools\opencv\build\"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/../../../tools/opencv/build/OpenCVConfig.cmake">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/../../../tools/opencv/build/OpenCVConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\tools\opencv\build\"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/../../../tools/opencv/build/x64/vc16/lib/OpenCVConfig.cmake">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/../../../tools/opencv/build/x64/vc16/lib/OpenCVConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\tools\opencv\build\x64\vc16\lib\"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/../../../tools/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/../../../tools/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\tools\opencv\build\x64\vc16\lib\"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/../../../tools/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/../../../tools/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\tools\opencv\build\x64\vc16\lib\"/>
 		</Unit>
-		<Unit filename="C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/../../../tools/opencv/build/x64/vc16/lib/OpenCVModules.cmake">
+		<Unit filename="C:/Users/RODRIGO/Push_Nuevo/../../../tools/opencv/build/x64/vc16/lib/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\tools\opencv\build\x64\vc16\lib\"/>
 		</Unit>
 	</Project>

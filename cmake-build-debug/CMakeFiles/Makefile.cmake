@@ -22,25 +22,17 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-C.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-CXX.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC.cmake"
-  "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake"
-  "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-MSVC-C.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-MSVC-CXX.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/ProcessorCount.cmake"
-  "C:/Users/RODRIGO/Reconocimiento-de-d-gitos-C-/CMakeLists.txt"
+  "C:/Users/RODRIGO/Push_Nuevo/CMakeLists.txt"
   "CMakeFiles/3.26.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeSystem.cmake"
-  "C:/tools/opencv/build/OpenCVConfig-version.cmake"
-  "C:/tools/opencv/build/OpenCVConfig.cmake"
-  "C:/tools/opencv/build/x64/vc16/lib/OpenCVConfig.cmake"
-  "C:/tools/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake"
-  "C:/tools/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake"
-  "C:/tools/opencv/build/x64/vc16/lib/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:
@@ -56,5 +48,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Reconocimiento-de-d-gitos-C-.dir/DependInfo.cmake"
+  "CMakeFiles/Push_Nuevo.dir/DependInfo.cmake"
   )

@@ -4,13 +4,13 @@
 
 #include "NeuronalNetwork.h"
 
-double NeuronalNetwork::Funcion_Perdida(const VectorXd& Funcion_activacion) const {
+double NeuronalNetwork::Funcion_Perdida(const VectorXd& Funcion_activacion, Index index) const {
 
     // esta función de perdida = L = - sumatoria en j=1 hasta el #clases de (yj ln(^yj))
     // esto se reduce solamente a = L = -ln(^yk) = -ln(probabilidad de la clase correcta después de aplicar la FA softmax)
 
-    VectorXd FA = softMax(Funcion_activacion);
-    double prob = FA[indice];
+    VectorXd FA = NeuronalNetwork::softMax(Funcion_activacion);
+    double prob = FA[index];
     return -log(prob + 1e-10); //eñ 1e-10 es para evitar el log(0).
 }
 
@@ -19,6 +19,6 @@ VectorXd NeuronalNetwork::Gradiante_Funcion_Perdida(const VectorXd& z) {
     // Ósea: gradiante del costo / gradiante de z
     // = Vector de la predicción del modelo - etiqueta real || (Fórmula lo más simplificada posible)
 
-    VectorXd softMaxs = softMax(z);
+    VectorXd softMaxs = NeuronalNetwork::softMax(z);
     return softMaxs - etiqueta_real;
 }

@@ -16,8 +16,8 @@ double NeuronalNetwork::derivada_sigmoid(double x) {
     return sigmoid(x) * (1.0 - sigmoid(x));
 }
 
-// No se utilizó, pero porsiacaso la dejaré.
-VectorXd NeuronalNetwork::derivada_softMax(const Eigen::VectorXd &x) {
+//// No se utilizó, pero porsiacaso lo deje.
+[[maybe_unused]] VectorXd NeuronalNetwork::derivada_softMax(const Eigen::VectorXd &x) {
 
     /*  Esto es equivalente:
             VectorXd SM = softMax(x);
@@ -27,9 +27,21 @@ VectorXd NeuronalNetwork::derivada_softMax(const Eigen::VectorXd &x) {
            retorno[i] = SM[i] * (1 - SM[i]);
         }
 
-        return retorno;
-     */
+       return retorno;
+       */
 
     // Menos compleja al trabajar directamente con comandos de la librería eigen.
+
+
     return softMax(x).array() * (1 - softMax(x).array());
 }
+
+[[maybe_unused]] double NeuronalNetwork::derivada_Relu(double x) {
+    return (x>0) ? 1 : 0;
+}
+
+double NeuronalNetwork::derivada_leakyRelu(double X, double alpha) {
+    return (X > 0) ? 1 : alpha;
+}
+
+// return (X > 0) ? 1 : (abs(X)> -1e-25) ? -1e-25 : alpha / (abs(X) + 1e-8);
